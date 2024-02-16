@@ -1,0 +1,34 @@
+cmd guidline:
+1. create new folder: mkdir example
+2. remove folder: rmdir example
+3. create file in example folder: echo. > example.txt
+4. open file from example folder: start example.txt
+5. show all files from a folder: dir
+6. show hidden files from a folder: dir /a
+
+git command guidline:
+1. first you have to initialize all files in folder. to do this go to
+that folder and type: git init
+
+2. suppost you have 3 files in a folder named example. the files are:
+example1.txt, example2.txt, example3.txt 
+now if you want to tract all files
+from that folder than type: git add  . 
+if you want to track one specific file then type: git add example.txt
+
+3. to check files are tracked or not type: git status
+4. to untract any file type: git rm --cached example1.txt 
+5. to check modified files type: git diff
+6. to undo modified files type: git restore day1.txt
+7 to commit and stagging file type: git commit -am"data is added"
+8 to check log or history of commited data type: git log
+9 to commit after stagging type: git commit -m"file is updated"
+10 to uncommit file where file will back to stagging position type: git reset --soft HEAD^
+11 to uncommit file where file will turn back to working directory from both commit and stagging position type: git reset HEAD^
+12 to uncommit file into last commit and back from  commit and stagging position type: git reset --hard HEAD^
+13 to uncommit last two commit from commit to stagging position type: git reset -soft HEAD~2
+14 to undo modified data in a file: type: git checkout filename
+15 to show any specific commit in detail type: git show commit_id
+16 to show all committed logs with 7 charecter id number type: git show --oneline
+17 by default git always takes its head position to the last commit. to change head position to any previous commit type: git checkout commit_id
+18 to return its head to last commit type: git checkout master  
